@@ -15,3 +15,8 @@ Parameters:
         -help        - Outputs the information about various available parameters
 
 *The Parameters for the script are taken from here. The default values are set.*
+
+# downloadArtifacts
+
+download any artifacts given URLs and path to download.
+
