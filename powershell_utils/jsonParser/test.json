@@ -1,0 +1,585 @@
+{
+    "$schema": "http://schema.express.azure.com/schemas/2015-01-01-alpha/ScopeBindings.json",
+    "contentVersion": "0.0.0.1",
+    "scopeBindings": [
+      {
+        "scopeTagName": "PPE",
+        "bindings": [
+          {
+            "find": "__EnvironmentNonGeoName__",
+            "replaceWith": "PPE"
+          },
+          {
+            "find": "__DatabaseNameFormatString__",
+            "replaceWith": "ppeboxadmin_{0}"
+          },
+          {
+            "find": "__BlobStorageUri__",
+            "replaceWith": "https://wusppeboxarmstorage.blob.core.windows.net"
+          },
+          {
+            "find": "__RedisSharedCacheName__",
+            "replaceWith": "wusppeadmincache.redis.cache.windows.net"
+          },
+          {
+            "find": "__SmbStorageAccountName__",
+            "replaceWith": "adminppeteamssmbstorage"
+          },
+          {
+            "find": "__contentblobstorageaccountname__",
+            "replaceWith": "ppecontentstorage"
+          },
+          {
+            "find": "__DomainConnectGoDaddyClientId__",
+            "replaceWith": "2994930196003809"
+          },
+          {
+            "find": "__DomainConnectOneAndOneClientId__",
+            "replaceWith": "microsoft.com.v2"
+          },
+          {
+            "find": "__FreelanceServiceClientId__",
+            "replaceWith": "34ff95da-4678-4d01-9494-e71c796e8b61"
+          },
+          {
+            "find": "__BoostServiceClientId__",
+            "replaceWith": "a0269f76-78f9-4572-937c-20a766ed6d21"
+          },
+          {
+            "find": "__Moniker__",
+            "replaceWith": "O365SuiteUXPPEMoniker"
+          },
+          {
+            "find": "__Microsoft.WindowsAzure.Plugins.Caching.DiagnosticLevel__",
+            "replaceWith": "3"
+          },
+          {
+            "find": "__Microsoft.WindowsAzure.Plugins.Caching.ClientDiagnosticLevel__",
+            "replaceWith": "2"
+          },
+          {
+            "find": "__GriffinRuntime-Torus-TorusSslCert__",
+            "replaceWith": "89DE313A14B39412FCDF798726E8B8C34CB33089"
+          },
+          {
+            "find": "__GriffinRuntime-Torus-ServiceInstanceType__",
+            "replaceWith": "Multitenant"
+          },
+          {
+            "find": "__GriffinRuntime-Cloud__",
+            "replaceWith": "Public"
+          },
+          {
+            "find": "__GriffinRuntime-Thumbprint__",
+            "replaceWith": "89DE313A14B39412FCDF798726E8B8C34CB33089"
+          },
+          {
+            "find": "__GriffinRuntime-OfficeDataLoader-ODLWorkload__",
+            "replaceWith": "O365SuiteUX"
+          },
+          {
+            "find": "__GriffinRuntime-PavcBTHostAgent-PavcWorkload__",
+            "replaceWith": "O365SuiteUX"
+          },
+          {
+            "find": "__GriffinRuntime-PavcBTHostAgent-ServiceLine__",
+            "replaceWith": "O365AdminPPE"
+          },
+          {
+            "find": "__GriffinRuntime-OfficeDataLoader-EnableSiphonPipeline__",
+            "replaceWith": "true"
+          },
+          {
+            "find": "__MDSAccount__",
+            "replaceWith": "O365SuiteUXPPE"
+          },
+          {
+            "find": "__MDSNamespace__",
+            "replaceWith": "NewO365SuitePPE"
+          },
+          {
+            "find": "__GenevaEnvironmentEndpoint__",
+            "replaceWith": "FirstPartyProd"
+          },
+          {
+            "find": "__MDSGCSCertThumbprint__",
+            "replaceWith": "cma-ppe.geneva.keyvault.m365admin.officeppe.com"
+          },
+          {
+            "find": "__MDSConfigVersion__",
+            "replaceWith": "6.2"
+          },
+          {
+            "find": "__MDSGCSEnabled__",
+            "replaceWith": "true"
+          },
+          {
+            "find": "__AzSecPackDisabledFeatures__",
+            "replaceWith": "AsmEventDriven,AsmUserGroup,AsmKernelInventory,AsmSWInventory,NetIsoScanner,WDATP,ProcessInvestigator,CodeIntegrity,AppLocker,AzCertInstaller,Audit,Antimalware"
+          },
+          {
+            "find": "__RpsServerPath__",
+            "replaceWith": "rpsserver-adminppe.xml"
+          },
+          {
+            "find": "__RemoteDesktopAllowedIPRanges__",
+            "replaceWith": "132.245.8.212-132.245.8.255"
+          },
+          {
+            "find": "__AVEServiceKey__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/PPE-AVEServiceKey/cb74f53c6fb1409a9d47527ff1410959"
+          },
+          {
+            "find": "__BoostServiceSecret__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/PPE-BoostServiceSecret/808b0472d93c4f9c86fee6cf839f4d6d"
+          },
+          {
+            // [SuppressMessage("Microsoft.Security", "CS002:SecretInNextLine", Justification="[Bug Id: 5689982]:[SecurityFix]:Placeholder String Suppression for password in ScopeBindings.json: https://office.visualstudio.com/OC/_workitems/edit/5689982/")]
+            "find": "__EncryptionPassword__",
+            // [SuppressMessage("Microsoft.Security", "CS002:SecretInNextLine", Justification="[Bug Id: 5689982]:[SecurityFix]:Placeholder String Suppression for password in ScopeBindings.json: https://office.visualstudio.com/OC/_workitems/edit/5689982/")]
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/PPE-EncryptionPassword/5e698d4dbf864528b23531823c6dc8b5"
+          },
+          {
+            "find": "__DomainConnectGoDaddyClientSecret__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/DomainConnectGoDaddyClientSecret/23f6b67984fc40bc8778f9425543a00f"
+          },
+          {
+            "find": "__DomainConnectOneAndOneClientSecret__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/DomainConnectOneAndOneSecret/1cdfd21ce4fe44a0b1eb0cc057e33191"
+          },
+          {
+            "find": "__FreelanceServiceSecret__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/PPE-FreelanceServiceSecret/f91cbb083d834e99af51f68f85ce8f35"
+          },
+          {
+            "find": "__GoDaddyResellerAPIKey__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/PPE-GoDaddyResellerAPIKey/6800e44f31ac422c856859e6230b48a8"
+          },
+          {
+            "find": "__GoDaddyResellerAPISecret__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/PPE-GoDaddyResellerAPISecret/4fa58a97caa648d7bddd6820267c3412"
+          },
+          {
+            "find": "__BingOCRAPIKey__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/BingOCRAPIKey/003844ded1b84585a635ceda4308b9ad"
+          },
+          {
+            "find": "__IngestionStorageAccountKey__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/PPE-IngestionStorageAccountKey/50ce352628af407ea19b3ac9cfa6ac4a"
+          },
+          {
+            "find": "__IngestionStorageAccountName__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/PPE-IngestionStorageAccountName/4ae558e5eddb4748ac2ef7e7247cc424"
+          },
+          {
+            "find": "__MachineDecryptionKey__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/MachineDecryptionKey/67b3224986e14a049b22f89484b90f62"
+          },
+          {
+            "find": "__MachineValidationKey__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/MachineValidationKey/6802e15153a14ac288d7792408325d78"
+          },
+          {
+            "find": "__NCUIngestionStorageAccountKey__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/PPE-NCUIngestionStorageAccountKey/4296fd0ef8f046ad95f6c2c5aac37e0c"
+          },
+          {
+            "find": "__NCUIngestionStorageAccountName__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/PPE-NCUIngestionStorageAccountName/cd3b25ea084d4d4ea559ec66cd271f0c"
+          },
+          {
+            "find": "__NonPIIDocDBAccessKey__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/ShellServiceNonPIIDocDBAccessKey-04062017/b2bdaaa26092428ea15a8bbef4165c57"
+          },
+          {
+            "find": "__PersonalizeAppClientSecret__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/PPE-PersonalizeAppClientSecret/6a24a4fc0d7c448c842196ec5eaadad5"
+          },
+          {
+            "find": "__SCUIngestionStorageAccountName__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/PPE-IngestionStorageAccountName/4ae558e5eddb4748ac2ef7e7247cc424"
+          },
+          {
+            // [SuppressMessage("Microsoft.Security", "CS002:SecretInNextLine", Justification="[Bug Id: 5689982]:[SecurityFix]:Placeholder String Suppression for password in ScopeBindings.json: https://office.visualstudio.com/OC/_workitems/edit/5689982/")]
+            "find": "__SigningPassword__",
+            // [SuppressMessage("Microsoft.Security", "CS002:SecretInNextLine", Justification="[Bug Id: 5689982]:[SecurityFix]:Placeholder String Suppression for password in ScopeBindings.json: https://office.visualstudio.com/OC/_workitems/edit/5689982/")]
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/PPE-SigningPassword/3d7166499f244f4f90f930b2d24f8a4d"
+          },
+          {
+            "find": "__SmbStorageAccessKey__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net/secrets/adminppeteamssmbstorageaccountkey/c34d351e95784525b12bc40342133563"
+          },
+          {
+            "find": "__contentblobstorageaccountkey__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net/secrets/contentendpoint/f100186821ca4196865ee2c04320416e"
+          },
+          {
+            "find": "__BusinessCenterServiceBusSASKey__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/BusinessCenterServiceBusSASKey/8787de75f8c84d3f9540c95513be86b5"
+          },
+          {
+            "find": "__AADAppKey__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/PPE-AADAppKey/2006f7bfbc024aaf929348741352ee87"
+          },
+          {
+            "find": "__PartnerCenterAzureAppSecret__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/PartnerCenterAzureAppSecret/0718561b2b9747c0bff167d9ab2838d0"
+          },
+          {
+            "find": "__TranslatorServiceSubscriptionKey__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/PPE-TranslatorServiceSubscriptionKey/a0f73af4b32e4852a56ab03e02417d5b"
+          },
+          {
+            "find": "__CustomerMonitoringAADAppSecret__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/CustomerMonitoringAADAppSecret/64bd2005c88e477eb5cac99da84d6204"
+          },
+          {
+            "find": "__TorontoAssistantApiPrimaryKey__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/TorontoAssistantApiPrimaryKey/7bee49ac778647898af7b753ea40da05"
+          },
+          {
+            "find": "__TorontoAssistantApiSecondaryKey__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/TorontoAssistantApiSecondaryKey/03a1a54667734817b58a54c0e130f7e0"
+          },
+          {
+            "find": "__DocumentDBPrimaryKey__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/admindocumentdbppe-secondarykey/9d719819d06e460587e6cb065a4cea87"
+          },
+          {
+            "find": "__CLCShareQueueConnectionString__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/CLCShareQueueConnectionStringPPE/73c8a4fd546243b5a8aeed786a5ce109"
+          },
+          {
+            // [SuppressMessage("Microsoft.Security", "CS002:SecretInNextLine", Justification="[Bug Id: 5689982]:[SecurityFix]:Placeholder String Suppression for password in ScopeBindings.json: https://office.visualstudio.com/OC/_workitems/edit/5689982/")]
+            "find": "__Aloha-EncryptionPassword__",
+            // [SuppressMessage("Microsoft.Security", "CS002:SecretInNextLine", Justification="[Bug Id: 5689982]:[SecurityFix]:Placeholder String Suppression for password in ScopeBindings.json: https://office.visualstudio.com/OC/_workitems/edit/5689982/")]
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/Aloha-EncryptionPassword/2d6cd998811f4e558633e5613dc820db"
+          },
+          {
+            // [SuppressMessage("Microsoft.Security", "CS002:SecretInNextLine", Justification="[Bug Id: 5689982]:[SecurityFix]:Placeholder String Suppression for password in ScopeBindings.json: https://office.visualstudio.com/OC/_workitems/edit/5689982/")]
+            "find": "__Aloha-SigningPassword__",
+            // [SuppressMessage("Microsoft.Security", "CS002:SecretInNextLine", Justification="[Bug Id: 5689982]:[SecurityFix]:Placeholder String Suppression for password in ScopeBindings.json: https://office.visualstudio.com/OC/_workitems/edit/5689982/")]
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/Aloha-SigningPassword/4aef304ca77c4f4096ca65c2a425a7c7"
+          },
+          {
+            "find": "__OneCDNAppSecret__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/1CDNAppSecret/044ddbbd91e44c389c7115d8203b26a9"
+          },
+          {
+            "find": "__FastTrackRFASBConnectionStr__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/FastTrackRFASBConnectionStr/82b495c4bca8498387e06bd0c0b7360d"
+          },
+          {
+            "find": "__FastTrackEligibilityServiceKey__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/FastTrackEligibilityServiceKey/73fc902323824d08b62ba2b290cb21bb"
+          },
+          {
+            "find": "__MarvelDataKustoAppSecret__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/marveldatakustoappsecret/7f95f3e19f9a4d0c919ff1491053133b"
+          },
+          {
+            "find": "__StorageAccountName__",
+            "replaceWith": "wusppeboxarmstorage"
+          },
+          {
+            "find": "__StorageAccessKey__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/wusppeboxarmstorage-storagekey/9fc7bd587439433188563ed8153cf25b"
+          },
+          {
+            "find": "__DiagnosticsConnectionString__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/wusppeboxarmstorageConnectionString/f5524a92799b4fb19f424b669d5ad9dc"
+          }
+        ]
+      },
+      {
+        "scopeTagName": "WUS-PPE",
+        "bindings": [
+          {
+            "find": "__AzureRegion__",
+            "replaceWith": "westus"
+          },
+          {
+            "find": "__Environment__",
+            "replaceWith": "wusppe"
+          },
+          {
+            "find": "__CloudServiceResourceGroupName__",
+            "replaceWith": "csesadminppewus-rg"
+          },        
+          {
+            "find": "__KeyvaultName__",
+            "replaceWith": "m365admin-ppe-wus"
+          },
+          {
+            "find": "__keyVaultResourceGroupName__",
+            "replaceWith": "m365admin-ppe-wus-rg"
+          },               
+          {
+            "find": "__RoleInstancesCount__",
+            "replaceWith": "4"
+          },
+          {
+            "find": "__VNET_ADDRESS_PREFIX__",
+            "replaceWith": "13.64.135.0/24"
+          },
+          {
+            "find": "__SUBNET_ADDRESS_PREFIX__",
+            "replaceWith": "13.64.135.0/25"
+          },
+          {
+            "find": "__RedisCacheName__",
+            "replaceWith": "wusppeadmincache.redis.cache.windows.net"
+          },
+          {
+            "find": "__RedisCacheAccessKey__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/WUSPPE-ADMIN-RedisCache-PrimaryKey/01f1cbcdd2d841f68748a4182bf7f595"
+          },
+          //Certs
+          {
+            "find": "__boxazmsonline__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/boxazppe-partner-ccsctp-com/87be737d5d0742ec9a71c47736ed1c71"
+          },
+          {
+            "find": "__portaledgecert__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/portal-officeppe-com/96977958e8264352964477c46d97ae7f"
+          },
+          {
+            "find": "__olscert__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/ols-edog/490199efdc194465b436228e03d9237c"
+          },
+          {
+            "find": "__expmansvc__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/expmansvc-ppe/8e8d94112dcb4f538d544033b27cf91f"
+          },
+          {
+            "find": "__fasttrack__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/fasttrack-officeppe-com/e0e08297e0374bc68658ce715d5bc849"
+          },
+          // AME certs without version
+          {
+            "find": "__m365adminaad__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/m365admin-aad-officeppe-com/"
+          },
+          {
+            "find": "__boxazoffice__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/boxazppe-partner-m365admin-officeppe-com/"
+          },
+          {
+            "find": "__boxuserimp__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/boxuserimp-m365admin-officeppe-com-ame/"
+          },
+          {
+            "find": "__BOXPII__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/BOX-EDOG-1361-PII/"
+          },
+          {
+            "find": "__rpscert__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/rps-ppe/"
+          },
+          {
+            "find": "__cmacert__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/cma-ppe-geneva-keyvault-m365admin-officeppe-com/"
+          },
+          {
+            "find": "__mockcert__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/partners-ame/"
+          }
+        ]
+      },
+      {
+        "scopeTagName": "WUS-PPE-Stage",
+        "bindings": [        
+          {
+            "find": "__CloudServiceName__",
+            "replaceWith": "adminppewusstaging"
+          },
+          {
+            "find": "__SwappableCloudServiceName__",
+            "replaceWith": "adminppewusproduction"
+          },
+          {
+            "find": "\"__Is_Stage__\"",
+            "replaceWith": "true"
+          },               
+          {
+            "find": "__adminreservedip__",
+            "replaceWith": "pip_adminppewusstaging_ipv4"
+          },
+          {
+            "find": "__GriffinRuntime-Torus-TorusDomain__",
+            "replaceWith": "adminppewusstaging.westus.cloudapp.azure.com"
+          }
+        ]
+      },    
+      {
+        "scopeTagName": "WUS-PPE-Prod",
+        "bindings": [        
+          {
+            "find": "__CloudServiceName__",
+            "replaceWith": "adminppewusproduction"
+          },
+          {
+            "find": "__SwappableCloudServiceName__",
+            "replaceWith": "adminppewusstaging"
+          },
+          {
+            "find": "\"__Is_Stage__\"",
+            "replaceWith": "false"
+          },        
+          {
+            "find": "__adminreservedip__",
+            "replaceWith": "pip_adminppewusproduction_ipv4"
+          },
+          {
+            "find": "__GriffinRuntime-Torus-TorusDomain__",
+            "replaceWith": "adminppewusproduction.westus.cloudapp.azure.com"
+          }
+        ]
+      },
+      {
+        "scopeTagName": "SEA-PPE",
+        "bindings": [
+          {
+            "find": "__AzureRegion__",
+            "replaceWith": "southeastasia"
+          },
+          {
+            "find": "__Environment__",
+            "replaceWith": "seappe"
+          },
+          {
+            "find": "__KeyvaultName__",
+            "replaceWith": "m365admin-ppe-sea"
+          },
+          {
+            "find": "__keyVaultResourceGroupName__",
+            "replaceWith": "m365admin-ppe-sea-rg"
+          },
+          {
+            "find": "__CloudServiceResourceGroupName__",
+            "replaceWith": "csesadminppesea-rg"
+          },             
+          {
+            "find": "__RoleInstancesCount__",
+            "replaceWith": "2"
+          },
+          {
+            "find": "__VNET_ADDRESS_PREFIX__",
+            "replaceWith": "13.64.137.0/24"
+          },
+          {
+            "find": "__SUBNET_ADDRESS_PREFIX__",
+            "replaceWith": "13.64.137.0/25"
+          },        
+          {
+            "find": "__RedisCacheName__",
+            "replaceWith": "seappeadmincache.redis.cache.windows.net"
+          },
+          {
+            "find": "__RedisCacheAccessKey__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net/secrets/SEAPPE-ADMIN-RedisCache-PrimaryKey/ff825a1e99e24c7da5481f39b4ba7c84"
+          },
+          //Certs
+          {
+            "find": "__boxazmsonline__",
+            "replaceWith": "https://m365admin-ppe-sea.vault.azure.net/secrets/boxazppe-partner-ccsctp-com/54f5c796a20e463a93d7e68930ba6fe5"
+          },
+          {
+            "find": "__boxuserimp__",
+            "replaceWith": "https://m365admin-ppe-sea.vault.azure.net/secrets/boxuserimp-m365admin-officeppe-com-ame/1e8e9ddcabbd417883f77d75382f0949"
+          },
+          {
+            "find": "__portaledgecert__",
+            "replaceWith": "https://m365admin-ppe-sea.vault.azure.net:443/secrets/portal-officeppe-com/b7d97b36bc45499888aefe89bfb86ff4"
+          },
+          {
+            "find": "__olscert__",
+            "replaceWith": "https://m365admin-ppe-sea.vault.azure.net/secrets/ols-edog/9cc3c06842384f83802d212a8b2bbd8e"
+          },
+          {
+            "find": "__expmansvc__",
+            "replaceWith": "https://m365admin-ppe-sea.vault.azure.net/secrets/expmansvc-ppe/e25ee460188f48c1b772cfe0facd2877"
+          },
+          {
+            "find": "__fasttrack__",
+            "replaceWith": "https://m365admin-ppe-sea.vault.azure.net/secrets/fasttrack-officeppe-com/d7413fb97ed4437393e286e549547be0"
+          },
+          //AME certs without version
+          {
+            "find": "__m365adminaad__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/m365admin-aad-officeppe-com/"
+          },
+          {
+            "find": "__BOXPII__",
+            "replaceWith": "https://m365admin-ppe-sea.vault.azure.net/secrets/BOX-EDOG-1361-PII/"
+          },
+          {
+            "find": "__rpscert__",
+            "replaceWith": "https://m365admin-ppe-sea.vault.azure.net/secrets/rps-ppe/"
+          },
+          {
+            "find": "__boxazoffice__",
+            "replaceWith": "https://m365admin-ppe-sea.vault.azure.net/secrets/boxazppe-partner-m365admin-officeppe-com/"
+          },
+          {
+            "find": "__cmacert__",
+            "replaceWith": "https://m365admin-ppe-sea.vault.azure.net:443/secrets/cma-ppe-geneva-keyvault-m365admin-officeppe-com/"
+          },
+          {
+            "find": "__mockcert__",
+            "replaceWith": "https://m365admin-ppe-wus.vault.azure.net:443/secrets/partners-ame/"
+          }          
+        ]
+      },
+      {
+        "scopeTagName": "SEA-PPE-Stage",
+        "bindings": [        
+          {
+            "find": "__CloudServiceName__",
+            "replaceWith": "adminppeseastaging"
+          },
+          {
+            "find": "__SwappableCloudServiceName__",
+            "replaceWith": "adminppeseaproduction"
+          },      
+          {
+            "find": "__adminreservedip__",
+            "replaceWith": "pip_adminppeseastaging_ipv4"
+          },
+          {
+            "find": "\"__Is_Stage__\"",
+            "replaceWith": "true"
+          },    
+          {
+            "find": "__GriffinRuntime-Torus-TorusDomain__",
+            "replaceWith": "adminppeseastaging.southeastasia.cloudapp.azure.com"
+          }     
+        ]
+      },
+      {
+        "scopeTagName": "SEA-PPE-Prod",
+        "bindings": [        
+          {
+            "find": "__CloudServiceName__",
+            "replaceWith": "adminppeseaproduction"
+          },
+          {
+            "find": "__SwappableCloudServiceName__",
+            "replaceWith": "adminppeseastaging"
+          }, 
+          {
+            "find": "\"__Is_Stage__\"",
+            "replaceWith": "false"
+          },       
+          {
+            "find": "__adminreservedip__",
+            "replaceWith": "pip_adminppeseaproduction_ipv4"
+          },
+          {
+            "find": "__GriffinRuntime-Torus-TorusDomain__",
+            "replaceWith": "adminppeseaproduction.southeastasia.cloudapp.azure.com"
+          }       
+        ]
+      }    
+    ]
+  }
